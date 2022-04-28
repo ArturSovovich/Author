@@ -25,13 +25,47 @@ main {
   max-width: 1194px;
   padding: 0 12px;
 }
-/* ------item------ */
-.btn {
+/* ------button------ */
+.btn-big{
+  padding: 17px 39px;
+  display: inline-block;
+  border-radius: 3%/9%;
+  font-weight: 600;
 }
-.btn:hover {
+.btn-middle {
+  padding: 12px 50px;
+  display: inline-block;
+  border-radius: 3%/9%;
+  font-weight: 600;
+}
+.btn-smoll {
+  padding: 9px 13px;
+  display: inline-block;
+  border-radius: 3%/9%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.btn_transparent {
+  color: #ffffff;
+  font-size: 26px;
+  letter-spacing: 0.52px;
+  border: 3px solid #ffffff;
+}
+.btn_transparent:hover {
+  color: #9ddadb;
+  border: 3px solid #49cbcd;
+}
+.btn_birch {
+  color: #fff;
+  background-color: #49cbcd;
+}
+.btn_back {
+  color: #fff;
+  background-color: #788492;
 }
 .btn:active {
 }
+/* ------item------ */
 
 /* ----Header---- */
 .menu_icon {
@@ -145,18 +179,55 @@ main {
   margin: 0 0 56px 0;
 }
 
-.main-slider_link {
-  padding: 17px 39px;
-  display: inline-block;
-  color: #ffffff;
-  font-size: 26px;
-  letter-spacing: 0.52px;
-  border: 3px solid #ffffff;
-  border-radius: 3%/9%;
+/* ----main-services--- */
+.services {
+  padding: 70px 0 98px 0;
 }
-.main-slider_link:hover {
-  color: #9ddadb;
+.content-row {
+  display: flex;
+}
+.content-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 25%;
+}
+.services-content_img {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
   border: 3px solid #49cbcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 44px 0;
+  flex: 0 0 auto;
+}
+.services-content_img img{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.services-content_title {
+  margin: 0 0 20px 0;
+}
+.card-title {
+  font-size: 22px;
+  line-height: 24px;
+  color: #4e525d;
+  text-align: center;
+}
+.services-content_text {
+  margin: 0 0 16px 0;
+}
+.card-text {
+  max-width: 252px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #4e525d;
+  text-align: center;
+  flex: 0 1 100%;
 }
 
 @media (max-width: 992px) {
